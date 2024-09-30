@@ -1,0 +1,287 @@
+/* styles.css */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Header Styles */
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.title p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-right: 20px;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Auth Container Styles */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.auth-box {
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.auth-box h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  border-color: #337ab7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.username-availability {
+  font-size: 12px;
+  color: #666;
+}
+
+.email-verification {
+  font-size: 12px;
+  color: #666;
+}
+
+.password-strength {
+  font-size: 12px;
+  color: #666;
+}
+
+.phone-verification {
+  font-size: 12px;
+  color: #666;
+}
+
+.captcha {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.captcha img {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.terms-and-conditions {
+  font-size: 12px;
+  color: #666;
+}
+
+.terms-and-conditions a {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #23527c;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-media-links a {
+  margin-right: 20px;
+  color: #337ab7;
+}
+
+.social-media-links a:hover {
+  color: #23527c;
+}
+
+.facebook-link {
+  background-color: #3b5998;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.google-link {
+  background-color: #dd4b39;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.twitter-link {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-column {
+  margin-right: 20px;
+}
+
+.footer-column h2 {
+  margin-top: 0;
+}
+
+.footer-column a {
+  color: #fff;
+}
+
+.footer-column a:hover {
+  color: #ccc;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auth-box {
+    width: 90%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-box {
+    width: 100%;
+  }
+
+  .footer-content {
+    padding: 10px;
+  }
+}

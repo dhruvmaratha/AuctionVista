@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Auction Vista</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-title">
+                <img src="/static/images/AuctionVista1.png" alt="Auction Vista Logo" class="logo">
+                <div class="title">
+                    <h1>Auction Vista</h1>
+                    <p>Your Premier Online Auction Marketplace</p>
+                </div>
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/events">Events</a>
+                <a href="/about-us">About Us</a>
+                <a href="/how-it-works">How It Works</a>
+                <a href="/our-commitment">Our Commitment</a>
+                <a href="/contact-us">Contact Us</a>
+                <a href="/login" class="active">Log In</a>
+                <a href="/signup">Sign Up</a>
+            </nav>
+            
+        </div>
+    </header>
+
+    <section class="auth-page">
+        <div class="auth-container">
+            <h2>Welcome back</h2>
+            <form action="/auth" method="POST">
+                <div class="form-group">
+                    <label for="email">Email address*</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <label for="remember-me">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        Remember me
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Log In</button>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
+            <p class="toggle-link">Don't have an account? <a href="/signup">Sign up</a></p>
+            <div class="divider">OR</div>
+            <button type="button" class="social-login google"><i class="fab fa-google"></i> Continue with Google</button>
+            <button type="button" class="social-login microsoft"><i class="fab fa-microsoft"></i> Continue with Microsoft Account</button>
+            <button type="button" class="social-login apple"><i class="fab fa-apple"></i> Continue with Apple</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Auction Vista?</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Bidding</h3>
+                    <p>Our platform ensures a secure and transparent bidding process.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Reach</h3>
+                    <p>Connect with buyers and sellers from all over the world.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Real-time Updates</h3>
+                    <p>Get real-time updates on auction prices and bidding activity.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-customer-service"></i>
+                    <h3>Exceptional Support</h3>
+                    <p>Our dedicated customer support team is always here to help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h2>About Us</h2>
+                <a href="#" style="text-align:center;">Company information</a>
+                <a href="#" style="text-align:center;">Mission and vision</a>
+            </div>
+                        <div class="footer-column">
+                <h2>Quick Links</h2>
+                <a href="#">Home</a>
+                <a href="#">Events</a>
+                <a href="#">About Us</a>
+                <a href="#">How It Works</a>
+                <a href="#">Our Commitment</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h2>Follow Us</h2>
+                <a href="#" style="text-align:center;"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" style="text-align:center;"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" style="text-align:center;"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" style="text-align:center;"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+            <div class="footer-column">
+                <h2>Get in Touch</h2>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Email: [info@auctionvista.com](mailto:info@auctionvista.com)</p>
+                <p>Address: 123 Main St, Anytown, USA 12345</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2023 Auction Vista. All rights reserved.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
